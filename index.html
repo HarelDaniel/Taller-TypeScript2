@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel='icon' href='data:,'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <h1>Ejemplo Básico</h1>
+    <h2>Taller TypeScript</h2>
+
+    <script type="module" src='./helloworld.js'></script>
+    <script src="./data.js"></script>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <!-- Lista de series -->
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Serie 1</h5>
+                        <p class="card-text">Breve descripción de la serie 1.</p>
+                        <button class="btn btn-primary" onclick="mostrarDetalles(1)">Ver detalles</button>
+                    </div>
+                </div>
+                <!-- Repite para otras series -->
+            </div>
+            <div class="col-md-3">
+                <!-- Área para mostrar detalles -->
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Detalles de la serie</h5>
+                        <p class="card-text" id="detalles">Aquí se mostrarán los detalles de la serie seleccionada.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts de Bootstrap y tu código JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function mostrarDetalles(serieId) {
+            // Aquí debes implementar la lógica para mostrar los detalles de la serie según su ID
+            // Por ejemplo, actualiza el contenido del elemento con ID "detalles"
+            document.getElementById("detalles").textContent = "Detalles de la serie " + serieId;
+        }
+    </script>
+</body>
+</html>
